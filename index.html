@@ -43,11 +43,17 @@
           <div class="hide-menu a-nav-toggle"></div>
 
           <div class="menu">
-            <!-- <div class="menu-lang">
-              <a href="#" class="menu-lang-item active">Eng.</a>
-              <a href="#" class="menu-lang-item">Fra.</a>
-              <a href="#" class="menu-lang-item">Ara.</a>
-            </div> -->
+            <div class="menu-lang">
+              <a onclick="darkMode()" class="dark-mode menu-lang-item active">Enable Dark Mode</a>
+              <!-- <a href="#" class="menu-lang-item">Fra.</a>
+              <a href="#" class="menu-lang-item">Ara.</a> -->
+            </div>
+
+            <script type="text/javascript">
+              function darkMode() {
+                document.getElementByClass('zoom').replace('');
+              }
+            </script>
 
             <div class="menu-main" id="accordion">
               <ul id="menuMain">
@@ -67,6 +73,7 @@
                 <div class="menu-footer-mail"><a href="mailto:hello@isaaaac.me" class="mail-link">hello@isaaaac.me</a></div>
               </div>
               <div class="menu-footer-copyright" id="copyright">&copy; Isaac 2020. All Rights Reserved.</div>
+
             </div>
             <div class="menu-ornament"></div>
           </div>
